@@ -28,8 +28,10 @@ class Api::ProductsController < ApplicationController
   end
   def update
      @product = Product.find_by(id: params[:id])
+     @images = @product.product
      @product.name = params[:name] || @product.name
      @product.price = params[:price] || @product.price
+     @product.image_url = @images
      @product.description = params[:description] || @product.description
      @product.save
       if @product.save 

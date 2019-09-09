@@ -4,13 +4,8 @@ class Product < ApplicationRecord
   validates :name, uniqueness: true
   validates :price, numericality: {greater_than: 0}
   validates :description, length: {in: 10..400}
-  def supplier
-    Supplier.find_by(id: supplier_id)
-    
-  end
-  def image
-    Image.where(product_id: id)
-  end
+  belongs_to :supplier
+  has_many :image
   def is_discounted?
     if price < 10
       return "true"
