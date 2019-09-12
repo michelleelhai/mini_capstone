@@ -1,9 +1,13 @@
-{name: product.name,
+{
+name: product.name,
 id: product.id, 
 price: product.price, 
 description: product.description,
-image_url:product.image,
+image_url:product.images,
 discounted: product.is_discounted?,
 tax: product.tax,
 total: product.total,
-supplier: product.supplier}
+supplier: product.supplier,
+user: current_user,
+categories: product.categories
+}

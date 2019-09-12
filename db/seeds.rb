@@ -8,7 +8,12 @@
 #   {name: "Dog King", email: "dogking@gmail.co", phone_number: "454-4545"},
 #   {name: "Products and More", email: "productsandmore@gmail.com", phone_number: "343-3435"}
 # ])
-image = Image.create({url: "https://s.yimg.com/aah/yhst-11545572856523/serta-designer-medallion-quilted-heated-blanket-king-36.png", product_id: 1})
-image = Image.create({url: "http://static.ddmcdn.com/en-us/apl/breedselector/images/breed-selector/dogs/breeds/shiba-inu_01_lg.jpg", product_id: 4})
-image = Image.create({url: "https://images.unsplash.com/photo-1496196614460-48988a57fccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80", product_id: 5})
-image = Image.create({url:"https://cdn2-www.dogtime.com/assets/uploads/2011/01/file_22906_akita-460x290.jpg", product_id: 4})
+# image = Image.create({url: "https://s.yimg.com/aah/yhst-11545572856523/serta-designer-medallion-quilted-heated-blanket-king-36.png", product_id: 1})
+# image = Image.create({url: "http://static.ddmcdn.com/en-us/apl/breedselector/images/breed-selector/dogs/breeds/shiba-inu_01_lg.jpg", product_id: 4})
+# image = Image.create({url: "https://images.unsplash.com/photo-1496196614460-48988a57fccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80", product_id: 5})
+# image = Image.create({url:"https://cdn2-www.dogtime.com/assets/uploads/2011/01/file_22906_akita-460x290.jpg", product_id: 4})
+# product = Product.create({name: "backpack", price: "48.00", description: "a helpful school supply for all ages.", supplier_id: 3})
+ProductCategory.create({product_id: 4, category_id: 1})
+ProductCategory.create({product_id: 1, category_id: 1})
+ProductCategory.create({product_id: 4, category_id: 2})
+
