@@ -1,0 +1,9 @@
+<h1>The product page</h1>
+<% @products.each do |product| %>
+<h2> <%=product.name%> </h2>
+<h2> <%=product.price%> </h2>
+<h2> <%=product.description%> </h2>
+<h2><%=product.tax%></h2>
+<h2><%=product.supplier%></h2>
+<a href="http://localhost:3000/products/<%=product.id%>">More info</a>
+<%end%>

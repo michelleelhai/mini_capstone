@@ -1,0 +1,7 @@
+<h1>The product page</h1>
+<h2> <%=@product.name%> </h2>
+<h3> price:<%=@product.price%> </h3>
+<h3> description: <%=@product.description%> </h3>
+<h3>tax:<%=@product.tax%></h3>
+<h3>supplier:<%=@product.supplier.name%></h3>
+<a href="/products/<%=@product.id%>/edit">Edit</a>

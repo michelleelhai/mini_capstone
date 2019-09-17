@@ -7,7 +7,7 @@ class Api::ProductsController < ApplicationController
       @products = Product.where("price >?", 100)
     end
     if params[:category]
-      category = Category.find_by(name: params[:category])
+      category = Category.find_by("name iLike ?", params[:category])
       @products = category.products
     end
     render 'index.json.jb'
