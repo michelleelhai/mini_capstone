@@ -13,7 +13,9 @@
 # image = Image.create({url: "https://images.unsplash.com/photo-1496196614460-48988a57fccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80", product_id: 5})
 # image = Image.create({url:"https://cdn2-www.dogtime.com/assets/uploads/2011/01/file_22906_akita-460x290.jpg", product_id: 4})
 # product = Product.create({name: "backpack", price: "48.00", description: "a helpful school supply for all ages.", supplier_id: 3})
-ProductCategory.create({product_id: 4, category_id: 1})
-ProductCategory.create({product_id: 1, category_id: 1})
-ProductCategory.create({product_id: 4, category_id: 2})
+# ProductCategory.create({product_id: 4, category_id: 1})
+# ProductCategory.create({product_id: 1, category_id: 1})
+# ProductCategory.create({product_id: 4, category_id: 2})
 
+Image.create({product_id: 7, url: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages-na.ssl-images-amazon.com%2Fimages%2FI%2F7128kd1I8yL._SL1500_.jpg&imgrefurl=https%3A%2F%2Fwww.amazon.com%2FHomyBasic-Confetti-Balloons-Decoration-Multi-color%2Fdp%2FB0794YLSF4&docid=oWeu1s5mU1CThM&tbnid=_zQQ5NFvOrEFDM%3A&vet=10ahUKEwjIxc7F59_kAhUUnZ4KHeo5BtYQMwiDASgFMAU..i&w=1374&h=1500&bih=718&biw=720&q=balloons&ved=0ahUKEwjIxc7F59_kAhUUnZ4KHeo5BtYQMwiDASgFMAU&iact=mrc&uact=8"})
+Image.create({product_id: 7, url: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjY9v_o59_kAhWHnp4KHVgYCV8QjRx6BAgBEAQ&url=https%3A%2F%2Fwww.jansport.com%2Fshop%2Fen%2Fjansport-us%2Fall-backpacks%2Fashbury-backpack-js0a47j1&psig=AOvVaw2lJwClW69v3lXgsTWUmx7_&ust=1569082997478239"})

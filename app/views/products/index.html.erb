@@ -1,9 +1,17 @@
-<h1>The product page</h1>
 <% @products.each do |product| %>
-<h2> <%=product.name%> </h2>
-<h2> <%=product.price%> </h2>
-<h2> <%=product.description%> </h2>
-<h2><%=product.tax%></h2>
-<h2><%=product.supplier%></h2>
-<a href="http://localhost:3000/products/<%=product.id%>">More info</a>
+
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="<%=product.images[0].url%>" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><%=product.name%></h5>
+    <p class="card-text"><%=product.price%></p>
+    <p class="card-text"><%=product.description%></p>
+    <p class="card-text"><%=product.tax%></p>
+    <p class="card-text"><%=product.supplier%></p>
+    <a href="http://localhost:3000/products/<%=product.id%>" class="btn btn-primary">Show More</a>
+  </div>
+</div>
 <%end%>
+
+
+
