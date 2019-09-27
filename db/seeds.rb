@@ -9,17 +9,22 @@ Supplier.create!([
   {name: "Lots of Products Co", email: "LOP@LOP.co", phone_number: "898-9898"},
   {name: "Dog King", email: "dogking@gmail.co", phone_number: "454-4545"},
   {name: "Products and More", email: "productsandmore@gmail.com", phone_number: "343-3435"}])
+Product.create!([
+  {name: "doggos", price: "130.0", description: "only the cutest damn thing in the world", supplier_id: 3},
+  {name: "turtles", price: "78.99", description: "just maybe the second cutest damn thing ever", supplier_id: 3},
+  {name: "backpack", price: "48.0", description: "a helpful school supply for all ages.", supplier_id: 3},
+  {name: "balloons", price: "38.0", description: "danis fear", supplier_id: 1}
+])
 Category.create!([
   {name: "fluffy things"},
   {name: "animals"}
 ])
 Image.create!([
-  {url: "https://s.yimg.com/aah/yhst-11545572856523/serta-designer-medallion-quilted-heated-blanket-king-36.png", product_id: 1},
-  {url: "http://static.ddmcdn.com/en-us/apl/breedselector/images/breed-selector/dogs/breeds/shiba-inu_01_lg.jpg", product_id: 4},
-  {url: "https://images.unsplash.com/photo-1496196614460-48988a57fccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80", product_id: 5},
-  {url: "https://cdn2-www.dogtime.com/assets/uploads/2011/01/file_22906_akita-460x290.jpg", product_id: 4},
-  {url: "https://partycity6.scene7.com/is/image/PartyCity/_pdp_sq_?$_1000x1000_$&$product=PartyCity/229504", product_id: 7},
-  {url: "https://images.jansport.com/is/image/JanSport/JS0A47J1_008_front?$WC-FULLIMAGE$", product_id: 6}
+  {url: "http://static.ddmcdn.com/en-us/apl/breedselector/images/breed-selector/dogs/breeds/shiba-inu_01_lg.jpg", product_id: 1},
+  {url: "https://images.unsplash.com/photo-1496196614460-48988a57fccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80", product_id: 2},
+  {url: "https://cdn2-www.dogtime.com/assets/uploads/2011/01/file_22906_akita-460x290.jpg", product_id: 1},
+  {url: "https://partycity6.scene7.com/is/image/PartyCity/_pdp_sq_?$_1000x1000_$&$product=PartyCity/229504", product_id: 4},
+  {url: "https://images.jansport.com/is/image/JanSport/JS0A47J1_008_front?$WC-FULLIMAGE$", product_id: 3}
 ])
 Order.create!([
   {user_id: 2, subtotal: nil, tax: nil, total: nil},
@@ -33,12 +38,7 @@ Order.create!([
   {user_id: 3, subtotal: "48.0", tax: "4.32", total: "52.32"},
   {user_id: 3, subtotal: "48.0", tax: "4.32", total: "52.32"}
 ])
-Product.create!([
-  {name: "doggos", price: "130.0", description: "only the cutest damn thing in the world", supplier_id: 3},
-  {name: "turtles", price: "78.99", description: "just maybe the second cutest damn thing ever", supplier_id: 3},
-  {name: "backpack", price: "48.0", description: "a helpful school supply for all ages.", supplier_id: 3},
-  {name: "balloons", price: "38.0", description: "danis fear", supplier_id: 1}
-])
+
 ProductCategory.create!([
   {category_id: 1, product_id: 4},
   {category_id: 2, product_id: 4},
